@@ -22,15 +22,19 @@ def run_training() -> None:
     
     # ADD MLFlow CODE HERE BELOW
     
-    # import mlflow
-    # import os
-    # from getpass import getpass
+    import mlflow
+    import os
+    from getpass import getpass
 
-    # os.environ['MLFLOW_TRACKING_USERNAME'] = #<your-username>
-    # os.environ['MLFLOW_TRACKING_PASSWORD'] = getpass("Enter your DagsHub access token: ")
-    # mlflow.set_tracking_uri("#<your-mlflow-url>")
-    # mlflow.set_experiment("Cat-vs-Dog Classification")
-    # mlflow.tensorflow.autolog()
+    MLFLOW_TRACKING_URI="https://dagshub.com/soni.pankajkumar/16_CatVsDog_DagsHub.mlflow"
+    MLFLOW_TRACKING_USERNAME="soni.pankajkumar"
+    MLFLOW_TRACKING_PASSWORD="9bd5b82533c78b831b0f52f8def2e31d30b94833"
+
+    os.environ['MLFLOW_TRACKING_USERNAME'] = MLFLOW_TRACKING_USERNAME
+    os.environ['MLFLOW_TRACKING_PASSWORD'] = MLFLOW_TRACKING_PASSWORD #getpass("Enter your DagsHub access token: ")
+    mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
+    mlflow.set_experiment("Cat-vs-Dog Classification")
+    mlflow.tensorflow.autolog()
 
 
     # Model fitting
