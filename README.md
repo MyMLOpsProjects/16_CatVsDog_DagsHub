@@ -7,3 +7,5 @@ DagsHub Handson
 **- MLflow models experiments snapshot:**
 <img width="2188" alt="image" src="https://github.com/MyMLOpsProjects/16_CatVsDog_DagsHub/assets/90625369/fa83529d-9298-4aac-af54-9916c79b3734">
 
+**Afetr running training on AWS Cloud9**
+<img width="2540" alt="image" src="https://github.com/MyMLOpsProjects/16_CatVsDog_DagsHub/assets/90625369/f2954afd-711f-41c1-ac7e-57a3b10f3118">
